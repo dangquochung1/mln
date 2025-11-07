@@ -5,7 +5,7 @@ import { theoryData } from '../data/theoryData';
 function TheoryPage() {
   const { formationKey } = useParams();
   const navigate = useNavigate();
-  
+
   const formation = formations.find(f => f.key === formationKey);
   const theory = theoryData[formationKey];
 
@@ -26,29 +26,29 @@ function TheoryPage() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative overflow-hidden">
       {/* Traditional Vietnamese clouds scattered randomly */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{animationDelay: '0s', animationDuration: '20s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{animationDelay: '4s', animationDuration: '22s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{animationDelay: '1s', animationDuration: '28s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{animationDelay: '5s', animationDuration: '26s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{animationDelay: '1.5s', animationDuration: '21s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{animationDelay: '3.5s', animationDuration: '27s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)'}} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{ animationDelay: '0s', animationDuration: '20s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{ animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{ animationDelay: '4s', animationDuration: '22s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{ animationDelay: '1s', animationDuration: '28s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{ animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{ animationDelay: '5s', animationDuration: '26s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{ animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{ animationDelay: '1.5s', animationDuration: '21s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{ animationDelay: '3.5s', animationDuration: '27s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{ animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)' }} />
       </div>
-      
+
       {/* Subtle amber overlay */}
-      <div className="fixed inset-0 pointer-events-none z-0" style={{background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)'}}></div>
+      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)' }}></div>
 
       {/* Header with enhanced gradient */}
       <div className={`relative bg-gradient-to-r ${formation.color} py-16 shadow-2xl overflow-hidden z-10`}>
         {/* Animated background pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-white rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10 max-w-6xl">
           <button
             onClick={() => navigate(-1)}
@@ -93,7 +93,7 @@ function TheoryPage() {
                   const lines = section.content.split('\n');
                   let bulletBuffer = [];
                   const elements = [];
-                  
+
                   lines.forEach((paragraph, pIndex) => {
                     // Handle bold text **text**
                     if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
@@ -106,7 +106,7 @@ function TheoryPage() {
                         );
                         bulletBuffer = [];
                       }
-                      
+
                       elements.push(
                         <h3 key={pIndex} className="text-2xl font-bold text-gray-800 mt-6 mb-3 flex items-center gap-2">
                           <span className="text-blue-500">▸</span>
@@ -129,7 +129,7 @@ function TheoryPage() {
                         );
                         bulletBuffer = [];
                       }
-                      
+
                       elements.push(
                         <div key={pIndex} className="my-5 p-5 bg-gradient-to-r from-blue-50/70 via-purple-50/70 to-pink-50/70 rounded-xl border-l-3 border-blue-400 shadow-sm hover:shadow-md transition-shadow">
                           <p className="text-blue-700 font-semibold text-lg leading-relaxed flex items-start gap-2">
@@ -150,7 +150,7 @@ function TheoryPage() {
                         );
                         bulletBuffer = [];
                       }
-                      
+
                       elements.push(
                         <div key={pIndex} className={`my-3 p-4 rounded-lg ${paragraph.startsWith('✓') ? 'bg-green-50/70 border-l-3 border-green-400' : 'bg-red-50/70 border-l-3 border-red-400'}`}>
                           <p className={`text-lg font-medium leading-relaxed ${paragraph.startsWith('✓') ? 'text-green-700' : 'text-red-700'}`}>
@@ -170,7 +170,7 @@ function TheoryPage() {
                         );
                         bulletBuffer = [];
                       }
-                      
+
                       elements.push(
                         <p key={pIndex} className="text-gray-700 mb-4 leading-relaxed text-lg">
                           {paragraph}
@@ -178,7 +178,7 @@ function TheoryPage() {
                       );
                     }
                   });
-                  
+
                   // Flush any remaining bullets
                   if (bulletBuffer.length > 0) {
                     elements.push(
@@ -187,7 +187,7 @@ function TheoryPage() {
                       </p>
                     );
                   }
-                  
+
                   return elements;
                 })()}
               </div>

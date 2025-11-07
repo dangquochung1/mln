@@ -7,74 +7,74 @@ function HomePage() {
       {/* Traditional Vietnamese clouds scattered randomly */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {/* Cloud 1 - Top left */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets/cloud.png"
           alt="cloud"
           className="absolute top-10 left-20 w-32 opacity-40 animate-float"
-          style={{animationDelay: '0s', animationDuration: '20s'}}
+          style={{ animationDelay: '0s', animationDuration: '20s' }}
         />
         {/* Cloud 2 - Top right */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets/cloud.png"
           alt="cloud"
           className="absolute top-32 right-32 w-40 opacity-30 animate-float"
-          style={{animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)'}}
+          style={{ animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)' }}
         />
         {/* Cloud 3 - Middle left */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets/cloud.png"
           alt="cloud"
           className="absolute top-1/4 left-10 w-28 opacity-35 animate-float"
-          style={{animationDelay: '4s', animationDuration: '22s'}}
+          style={{ animationDelay: '4s', animationDuration: '22s' }}
         />
         {/* Cloud 4 - Middle right */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute top-1/3 right-16 w-36 opacity-25 animate-float"
-          style={{animationDelay: '1s', animationDuration: '28s'}}
+          style={{ animationDelay: '1s', animationDuration: '28s' }}
         />
         {/* Cloud 5 - Center top */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute top-20 left-1/2 w-32 opacity-30 animate-float"
-          style={{animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)'}}
+          style={{ animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)' }}
         />
         {/* Cloud 6 - Lower left */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float"
-          style={{animationDelay: '5s', animationDuration: '26s'}}
+          style={{ animationDelay: '5s', animationDuration: '26s' }}
         />
         {/* Cloud 7 - Lower right */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float"
-          style={{animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)'}}
+          style={{ animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)' }}
         />
         {/* Cloud 8 - Top center-left */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute top-24 left-1/3 w-30 opacity-32 animate-float"
-          style={{animationDelay: '1.5s', animationDuration: '21s'}}
+          style={{ animationDelay: '1.5s', animationDuration: '21s' }}
         />
         {/* Cloud 9 - Middle center */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float"
-          style={{animationDelay: '3.5s', animationDuration: '27s'}}
+          style={{ animationDelay: '3.5s', animationDuration: '27s' }}
         />
         {/* Cloud 10 - Bottom center */}
-        <img 
-          src="/src/assets/cloud.png" 
+        <img
+          src="/assets//cloud.png"
           alt="cloud"
           className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float"
-          style={{animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)'}}
+          style={{ animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)' }}
         />
       </div>
 
@@ -115,15 +115,15 @@ function HomePage() {
               {formations.map((formation, index) => (
                 <div key={formation.id} className="flex flex-col items-center text-center flex-1 relative z-10">
                   <div className={`w-20 h-20 rounded-full bg-gradient-to-r ${formation.color} border-4 border-amber-200 shadow-lg flex items-center justify-center mb-3 hover:scale-110 transition-transform overflow-hidden`}>
-                    <img 
-                      src={`/src/assets/Image/${formation.id}.png`} 
+                    <img
+                      src={`/assets//Image/${formation.id}.png`}
                       alt={formation.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <p className="text-xs font-semibold text-amber-700 mb-1">{formation.period}</p>
                   <p className="text-sm font-bold text-amber-900">{formation.name}</p>
-                  
+
                   {/* Connecting line - hidden on mobile, shown on desktop */}
                   {index < formations.length - 1 && (
                     <div className="hidden md:block absolute left-1/2 top-10 w-full h-0.5">
@@ -148,10 +148,9 @@ function HomePage() {
             {formations.map((formation, index) => (
               <div
                 key={formation.id}
-                className={`mb-20 flex flex-col md:flex-row items-center animate-slide-up ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-                style={{animationDelay: `${index * 0.15}s`}}
+                className={`mb-20 flex flex-col md:flex-row items-center animate-slide-up ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Content Card */}
                 <div className="w-full md:w-5/12 mb-6 md:mb-0">
@@ -160,10 +159,10 @@ function HomePage() {
                   >
                     {/* Glow effect on hover */}
                     <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${formation.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500`}></div>
-                    
+
                     <div className="relative z-10">
                       <div className="text-center mb-6">
-                        <span className="text-6xl inline-block animate-float" style={{animationDelay: `${index * 0.3}s`}}>{formation.icon}</span>
+                        <span className="text-6xl inline-block animate-float" style={{ animationDelay: `${index * 0.3}s` }}>{formation.icon}</span>
                         <div className="flex items-center justify-center gap-2 mt-3">
                           <span className="text-sm text-amber-700">📅</span>
                           <p className="text-sm text-amber-800 font-semibold">{formation.period}</p>
@@ -172,11 +171,11 @@ function HomePage() {
                       <h3 className="text-3xl font-black text-amber-900 mb-4 tracking-tight text-center">
                         {formation.name}
                       </h3>
-                      
+
                       <p className="text-amber-800 mb-8 leading-relaxed text-base">
                         {formation.description}
                       </p>
-                      
+
                       <div className="flex gap-4">
                         <Link
                           to={`/theory/${formation.key}`}

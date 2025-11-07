@@ -6,10 +6,10 @@ import { quizData } from '../data/quizData';
 function QuizPage() {
   const { formationKey } = useParams();
   const navigate = useNavigate();
-  
+
   const formation = formations.find(f => f.key === formationKey);
   const questions = quizData[formationKey];
-  
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
@@ -78,26 +78,26 @@ function QuizPage() {
   if (showResult) {
     const score = calculateScore();
     const percentage = (score / questions.length) * 100;
-    
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 py-8 relative overflow-hidden">
         {/* Traditional Vietnamese clouds scattered randomly */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{animationDelay: '0s', animationDuration: '20s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{animationDelay: '4s', animationDuration: '22s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{animationDelay: '1s', animationDuration: '28s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{animationDelay: '5s', animationDuration: '26s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{animationDelay: '1.5s', animationDuration: '21s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{animationDelay: '3.5s', animationDuration: '27s'}} />
-          <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)'}} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{ animationDelay: '0s', animationDuration: '20s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{ animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{ animationDelay: '4s', animationDuration: '22s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{ animationDelay: '1s', animationDuration: '28s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{ animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{ animationDelay: '5s', animationDuration: '26s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{ animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{ animationDelay: '1.5s', animationDuration: '21s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{ animationDelay: '3.5s', animationDuration: '27s' }} />
+          <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{ animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)' }} />
         </div>
-        
+
         {/* Subtle amber overlay */}
-        <div className="fixed inset-0 pointer-events-none z-0" style={{background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)'}}></div>
-        
+        <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)' }}></div>
+
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           {/* Header */}
           <div className={`relative bg-gradient-to-r ${formation.color} rounded-3xl p-8 mb-8 text-white shadow-2xl overflow-hidden`}>
@@ -138,9 +138,9 @@ function QuizPage() {
             </div>
             <p className="text-xl text-gray-700 font-medium max-w-md mx-auto leading-relaxed">
               {percentage >= 80 ? '🌟 Xuất sắc! Bạn nắm vững kiến thức!' :
-               percentage >= 60 ? '👍 Khá tốt! Hãy ôn thêm một chút.' :
-               percentage >= 40 ? '💪 Cần cố gắng thêm nha!' :
-               '📚 Bạn nên đọc lại lý thuyết nhé!'}
+                percentage >= 60 ? '👍 Khá tốt! Hãy ôn thêm một chút.' :
+                  percentage >= 40 ? '💪 Cần cố gắng thêm nha!' :
+                    '📚 Bạn nên đọc lại lý thuyết nhé!'}
             </p>
           </div>
 
@@ -152,13 +152,12 @@ function QuizPage() {
             {questions.map((q, index) => {
               const userAnswer = selectedAnswers[q.id];
               const isCorrect = userAnswer === q.correctAnswer;
-              
+
               return (
                 <div key={q.id} className="mb-8 pb-8 border-b-2 border-gray-100 last:border-b-0">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className={`flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center text-3xl ${
-                      isCorrect ? 'bg-green-100' : 'bg-red-100'
-                    }`}>
+                    <div className={`flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center text-3xl ${isCorrect ? 'bg-green-100' : 'bg-red-100'
+                      }`}>
                       {isCorrect ? '✅' : '❌'}
                     </div>
                     <div className="flex-1">
@@ -183,11 +182,10 @@ function QuizPage() {
                       </div>
                       <button
                         onClick={() => toggleExplanation(q.id)}
-                        className={`mt-4 px-5 py-2 rounded-xl font-semibold transition-all flex items-center gap-2 ${
-                          showExplanation[q.id]
+                        className={`mt-4 px-5 py-2 rounded-xl font-semibold transition-all flex items-center gap-2 ${showExplanation[q.id]
                             ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                        }`}
+                          }`}
                       >
                         <span>{showExplanation[q.id] ? '▼' : '▶'}</span>
                         {showExplanation[q.id] ? 'Ẩn giải thích' : 'Xem giải thích'}
@@ -241,21 +239,21 @@ function QuizPage() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 py-8 relative overflow-hidden">
       {/* Traditional Vietnamese clouds scattered randomly */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{animationDelay: '0s', animationDuration: '20s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{animationDelay: '4s', animationDuration: '22s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{animationDelay: '1s', animationDuration: '28s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{animationDelay: '5s', animationDuration: '26s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{animationDelay: '1.5s', animationDuration: '21s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{animationDelay: '3.5s', animationDuration: '27s'}} />
-        <img src="/src/assets/cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)'}} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-10 left-20 w-32 opacity-40 animate-float" style={{ animationDelay: '0s', animationDuration: '20s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-32 right-32 w-40 opacity-30 animate-float" style={{ animationDelay: '2s', animationDuration: '25s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/4 left-10 w-28 opacity-35 animate-float" style={{ animationDelay: '4s', animationDuration: '22s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/3 right-16 w-36 opacity-25 animate-float" style={{ animationDelay: '1s', animationDuration: '28s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-20 left-1/2 w-32 opacity-30 animate-float" style={{ animationDelay: '3s', animationDuration: '24s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/3 left-1/4 w-36 opacity-35 animate-float" style={{ animationDelay: '5s', animationDuration: '26s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-1/4 right-1/3 w-40 opacity-28 animate-float" style={{ animationDelay: '2.5s', animationDuration: '23s', transform: 'scaleX(-1)' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-24 left-1/3 w-30 opacity-32 animate-float" style={{ animationDelay: '1.5s', animationDuration: '21s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute top-1/2 left-2/3 w-34 opacity-27 animate-float" style={{ animationDelay: '3.5s', animationDuration: '27s' }} />
+        <img src="/assets//cloud.png" alt="cloud" className="absolute bottom-20 left-1/2 w-38 opacity-33 animate-float" style={{ animationDelay: '4.5s', animationDuration: '29s', transform: 'scaleX(-1)' }} />
       </div>
-      
+
       {/* Subtle amber overlay */}
-      <div className="fixed inset-0 pointer-events-none z-0" style={{background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)'}}></div>
-      
+      <div className="fixed inset-0 pointer-events-none z-0" style={{ background: 'radial-gradient(ellipse at center, transparent 0%, rgba(217, 119, 6, 0.05) 100%)' }}></div>
+
       <div className="container mx-auto px-4 max-w-4xl relative z-10">
         {/* Header with enhanced design */}
         <div className={`relative bg-gradient-to-r ${formation.color} rounded-3xl p-8 mb-8 text-white shadow-2xl overflow-hidden`}>
@@ -264,7 +262,7 @@ function QuizPage() {
             <div className="absolute top-0 right-0 w-40 h-40 bg-white rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-40 h-40 bg-white rounded-full blur-2xl"></div>
           </div>
-          
+
           <button
             onClick={() => navigate(-1)}
             className="relative z-10 group hover:bg-white/20 px-5 py-3 rounded-xl mb-6 transition-all font-semibold flex items-center gap-2 backdrop-blur-sm border border-white/20"
@@ -315,8 +313,8 @@ function QuizPage() {
           {/* Image if available */}
           {question.image && (
             <div className="mb-6 rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src={question.image} 
+              <img
+                src={question.image}
                 alt={`Câu hỏi ${currentQuestion + 1}`}
                 className="w-full h-auto object-cover max-h-96"
               />
@@ -326,21 +324,19 @@ function QuizPage() {
           <div className="space-y-4">
             {question.options.map((option, index) => {
               const isSelected = selectedAnswer === index;
-              
+
               return (
                 <button
                   key={index}
                   onClick={() => handleAnswer(question.id, index)}
-                  className={`group w-full text-left p-5 md:p-6 rounded-2xl border-2 transition-all duration-300 ${
-                    isSelected
+                  className={`group w-full text-left p-5 md:p-6 rounded-2xl border-2 transition-all duration-300 ${isSelected
                       ? `border-blue-500 bg-gradient-to-r from-blue-50 to-purple-50 shadow-xl scale-[1.02]`
                       : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50 hover:shadow-lg'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-4">
-                    <div className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all ${
-                      isSelected ? 'border-blue-500 bg-blue-500 scale-110' : 'border-gray-300 group-hover:border-blue-400'
-                    }`}>
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all ${isSelected ? 'border-blue-500 bg-blue-500 scale-110' : 'border-gray-300 group-hover:border-blue-400'
+                      }`}>
                       {isSelected && (
                         <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -362,11 +358,10 @@ function QuizPage() {
           <button
             onClick={handlePrev}
             disabled={currentQuestion === 0}
-            className={`group px-8 py-4 rounded-2xl font-bold transition-all flex items-center gap-2 ${
-              currentQuestion === 0
+            className={`group px-8 py-4 rounded-2xl font-bold transition-all flex items-center gap-2 ${currentQuestion === 0
                 ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 : 'bg-white text-amber-700 border-2 border-amber-300 shadow-lg hover:shadow-xl hover:bg-amber-50'
-            }`}
+              }`}
           >
             <span className={currentQuestion === 0 ? '' : 'group-hover:-translate-x-1 transition-transform'}>←</span>
             Câu trước
@@ -402,18 +397,17 @@ function QuizPage() {
             {questions.map((q, index) => {
               const isAnswered = selectedAnswers[q.id] !== undefined;
               const isCurrent = index === currentQuestion;
-              
+
               return (
                 <button
                   key={q.id}
                   onClick={() => setCurrentQuestion(index)}
-                  className={`relative w-full aspect-square rounded-xl font-bold transition-all text-lg ${
-                    isCurrent
+                  className={`relative w-full aspect-square rounded-xl font-bold transition-all text-lg ${isCurrent
                       ? `bg-gradient-to-br ${formation.color} text-white shadow-2xl scale-110 z-10`
                       : isAnswered
-                      ? 'bg-green-500 text-white shadow-lg hover:scale-105'
-                      : 'bg-amber-100 text-amber-800 hover:bg-amber-200 hover:scale-105 border-2 border-amber-300'
-                  }`}
+                        ? 'bg-green-500 text-white shadow-lg hover:scale-105'
+                        : 'bg-amber-100 text-amber-800 hover:bg-amber-200 hover:scale-105 border-2 border-amber-300'
+                    }`}
                 >
                   <span className="absolute inset-0 flex items-center justify-center">
                     {index + 1}
