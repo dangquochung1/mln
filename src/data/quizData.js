@@ -5,7 +5,7 @@ export const quizData = {
     {
       id: 1,
       question: 'Đặc điểm cơ bản nhất về kinh tế của xã hội nguyên thủy là gì?',
-      image: '/assets/s/quiz/img/1/1.jpg',
+      image: '/assets/quiz/img/1/1.jpg',
       options: [
         'Nông nghiệp trồng lúa nước phát triển.',
         'Sở hữu tư nhân về tư liệu sản xuất.',
@@ -18,7 +18,7 @@ export const quizData = {
     {
       id: 2,
       question: 'Tổ chức xã hội đầu tiên của loài người là gì?',
-      image: '/assets/s/quiz/img/1/2.webp',
+      image: '/assets/quiz/img/1/2.webp',
       options: [
         'Thị tộc',
         'Nhà nước',
@@ -31,7 +31,7 @@ export const quizData = {
     {
       id: 3,
       question: '"Cuộc cách mạng Đá Mới" ở Việt Nam được đặc trưng bởi sự chuyển biến nào?',
-      image: '/assets/s/quiz/img/1/3.jpg',
+      image: '/assets/quiz/img/1/3.jpg',
       options: [
         'Từ săn bắt, hái lượm sang trồng trọt, chăn nuôi.',
         'Từ chế độ mẫu hệ sang chế độ phụ hệ.',
@@ -44,7 +44,7 @@ export const quizData = {
     {
       id: 4,
       question: 'Kỹ thuật chế tác công cụ nào là bước tiến lớn của thời kỳ Đá Mới?',
-      image: '/assets/s/quiz/img/1/4.webp',
+      image: '/assets/quiz/img/1/4.webp',
       options: [
         'Ghè đẽo thô sơ.',
         'Mài nhẵn toàn bộ hoặc ở lưỡi công cụ.',
@@ -57,7 +57,7 @@ export const quizData = {
     {
       id: 5,
       question: 'Nền văn hóa nào là cơ sở vật chất cho sự ra đời của nhà nước Văn Lang?',
-      image: '/assets/s/quiz/img/1/5.jpg',
+      image: '/assets/quiz/img/1/5.jpg',
       options: [
         'Văn hóa Sơn Vi',
         'Văn hóa Hòa Bình',
@@ -70,7 +70,7 @@ export const quizData = {
     {
       id: 6,
       question: 'Nguyên nhân trực tiếp dẫn đến sự tan rã của xã hội nguyên thủy là gì?',
-      image: '/assets/s/quiz/img/1/6.webp',
+      image: '/assets/quiz/img/1/6.webp',
       options: [
         'Con người tìm ra lửa.',
         'Xã hội phân chia thành các thị tộc.',
@@ -83,7 +83,7 @@ export const quizData = {
     {
       id: 7,
       question: 'Trong xã hội nguyên thủy, hình thức phân phối sản phẩm phổ biến nhất là?',
-      image: '/assets/s/quiz/img/1/7.jpg',
+      image: '/assets/quiz/img/1/7.jpg',
       options: [
         'Phân phối theo lao động.',
         'Phân phối theo tài sản đóng góp.',
@@ -120,7 +120,7 @@ export const quizData = {
     {
       id: 10,
       question: 'Sự kiện nào đánh dấu xã hội nguyên thủy ở Việt Nam chính thức tan rã?',
-      image: '/assets/s/quiz/img/1/11.jpg',
+      image: '/assets/quiz/img/1/11.jpg',
       options: [
         'Con người biết làm gốm.',
         'Con người biết mài công cụ đá.',
@@ -136,7 +136,7 @@ export const quizData = {
     {
       id: 1,
       question: 'Hình thái kinh tế - xã hội chiếm hữu nô lệ ra đời khi nào?',
-      image: '/assets/s/quiz/img/2/1.png',
+      image: '/assets/quiz/img/2/1.png',
       options: [
         'Khi con người biết sử dụng công cụ bằng đá',
         'Khi xuất hiện công cụ kim loại và sản phẩm dư thừa',
@@ -149,7 +149,7 @@ export const quizData = {
     {
       id: 2,
       question: 'Đặc trưng nổi bật nhất của xã hội chiếm hữu nô lệ là gì?',
-      image: '/assets/s/quiz/img/2/2.png',
+      image: '/assets/quiz/img/2/2.png',
       options: [
         'Nhà nước phong kiến nắm quyền',
         'Nô lệ là lực lượng lao động chủ yếu và bị coi như tài sản',
@@ -162,7 +162,7 @@ export const quizData = {
     {
       id: 3,
       question: 'Quốc gia nào phát triển xã hội chiếm hữu nô lệ điển hình nhất?',
-      image: '/assets/s/quiz/img/2/3.png',
+      image: '/assets/quiz/img/2/3.png',
       options: [
         'Trung Quốc và Ấn Độ cổ đại',
         'Hy Lạp và La Mã cổ đại',
@@ -175,7 +175,7 @@ export const quizData = {
     {
       id: 4,
       question: 'Mối quan hệ sản xuất chủ yếu trong xã hội chiếm hữu nô lệ là:',
-      image: '/assets/s/quiz/img/2/4.png',
+      image: '/assets/quiz/img/2/4.png',
       options: [
         'Quan hệ địa chủ – nông dân',
         'Quan hệ chủ nô – nô lệ',
@@ -188,7 +188,7 @@ export const quizData = {
     {
       id: 5,
       question: 'Ở Việt Nam, xã hội chiếm hữu nô lệ có hình thành rõ rệt không?',
-      image: '/assets/s/quiz/img/2/5.png',
+      image: '/assets/quiz/img/2/5.png',
       options: [
         'Có, phát triển mạnh như La Mã',
         'Có, nhưng tồn tại ngắn',
@@ -201,7 +201,7 @@ export const quizData = {
     {
       id: 6,
       question: 'Yếu tố "nô lệ" trong xã hội Việt Nam cổ đại thể hiện chủ yếu ở đâu?',
-      image: '/assets/s/quiz/img/2/6.png',
+      image: '/assets/quiz/img/2/6.png',
       options: [
         'Trong lao động nông nghiệp tự do',
         'Trong tầng lớp thương nhân',
@@ -214,7 +214,7 @@ export const quizData = {
     {
       id: 7,
       question: 'Nguyên nhân chủ yếu khiến Việt Nam không phát triển xã hội chiếm hữu nô lệ là:',
-      image: '/assets/s/quiz/img/2/7.png',
+      image: '/assets/quiz/img/2/7.png',
       options: [
         'Do địa hình phức tạp, ít tài nguyên',
         'Do nông nghiệp lúa nước và tổ chức làng xã bền chặt',
@@ -227,7 +227,7 @@ export const quizData = {
     {
       id: 8,
       question: 'Trong thời Bắc thuộc, yếu tố nào thể hiện ảnh hưởng của chiếm hữu nô lệ?',
-      image: '/assets/s/quiz/img/2/8.png',
+      image: '/assets/quiz/img/2/8.png',
       options: [
         'Người dân bị bắt đi lao dịch, nộp thuế nặng',
         'Nhà nước tự chủ, độc lập hoàn toàn',
@@ -240,7 +240,7 @@ export const quizData = {
     {
       id: 9,
       question: 'Việc Việt Nam không có xã hội chiếm hữu nô lệ hoàn chỉnh dẫn đến đặc điểm gì?',
-      image: '/assets/s/quiz/img/2/9.png',
+      image: '/assets/quiz/img/2/9.png',
       options: [
         'Xã hội phong kiến xuất hiện sớm hơn',
         'Không hình thành tầng lớp quý tộc',
@@ -253,7 +253,7 @@ export const quizData = {
     {
       id: 10,
       question: 'Bài học từ hình thái xã hội chiếm hữu nô lệ trên thế giới là gì?',
-      image: '/assets/s/quiz/img/2/10.png',
+      image: '/assets/quiz/img/2/10.png',
       options: [
         'Cần duy trì chế độ nô lệ',
         'Cần bảo vệ quyền con người và chống bóc lột',
@@ -269,7 +269,7 @@ export const quizData = {
     {
       id: 1,
       question: 'Hình thái phong kiến ở Việt Nam bắt đầu hình thành rõ nét từ thời kỳ nào?',
-      image: '/assets/s/quiz/img/3/1.jpg',
+      image: '/assets/quiz/img/3/1.jpg',
       options: [
         'Thế kỷ VIII',
         'Thế kỷ X',
@@ -282,7 +282,7 @@ export const quizData = {
     {
       id: 2,
       question: 'Cơ sở kinh tế của xã hội phong kiến Việt Nam là gì?',
-      image: '/assets/s/quiz/img/3/2.jpg',
+      image: '/assets/quiz/img/3/2.jpg',
       options: [
         'Thương nghiệp và thủ công nghiệp',
         'Nông nghiệp trồng lúa nước',
@@ -295,7 +295,7 @@ export const quizData = {
     {
       id: 3,
       question: 'Trong xã hội phong kiến Việt Nam, giai cấp thống trị là:',
-      image: '/assets/s/quiz/img/3/3.jpg',
+      image: '/assets/quiz/img/3/3.jpg',
       options: [
         'Nông dân',
         'Địa chủ – quan lại',
@@ -308,7 +308,7 @@ export const quizData = {
     {
       id: 4,
       question: 'Quan hệ sản xuất đặc trưng của xã hội phong kiến là:',
-      image: '/assets/s/quiz/img/3/4.jpg',
+      image: '/assets/quiz/img/3/4.jpg',
       options: [
         'Chủ – nô',
         'Chủ – thợ',
@@ -321,7 +321,7 @@ export const quizData = {
     {
       id: 5,
       question: 'Đặc trưng nổi bật nhất của kinh tế phong kiến Việt Nam là:',
-      image: '/assets/s/quiz/img/3/5.jpg',
+      image: '/assets/quiz/img/3/5.jpg',
       options: [
         'Kinh tế hàng hóa phát triển',
         'Nền kinh tế tự cấp tự túc',
@@ -334,7 +334,7 @@ export const quizData = {
     {
       id: 6,
       question: 'Dưới thời Lý – Trần – Lê, nền phong kiến Việt Nam đạt đến giai đoạn nào?',
-      image: '/assets/s/quiz/img/3/6.webp',
+      image: '/assets/quiz/img/3/6.webp',
       options: [
         'Hình thành',
         'Phát triển thịnh đạt',
@@ -347,7 +347,7 @@ export const quizData = {
     {
       id: 7,
       question: 'Từ thế kỷ XVIII – XIX, chế độ phong kiến Việt Nam rơi vào tình trạng:',
-      image: '/assets/s/quiz/img/3/7.jpg',
+      image: '/assets/quiz/img/3/7.jpg',
       options: [
         'Ổn định lâu dài',
         'Phát triển mạnh mẽ',
@@ -360,7 +360,7 @@ export const quizData = {
     {
       id: 8,
       question: 'Nguyên nhân sâu xa dẫn đến khủng hoảng của chế độ phong kiến là:',
-      image: '/assets/s/quiz/img/3/8.webp',
+      image: '/assets/quiz/img/3/8.webp',
       options: [
         'Do ngoại xâm',
         'Do thiên tai',
@@ -373,7 +373,7 @@ export const quizData = {
     {
       id: 9,
       question: 'Vai trò của chế độ phong kiến Việt Nam trong tiến trình lịch sử là gì?',
-      image: '/assets/s/quiz/img/3/9.jpg',
+      image: '/assets/quiz/img/3/9.jpg',
       options: [
         'Hoàn toàn tiêu cực',
         'Không có đóng góp nào',
@@ -386,7 +386,7 @@ export const quizData = {
     {
       id: 10,
       question: 'Sự kết thúc của hình thái phong kiến Việt Nam gắn liền với sự kiện nào?',
-      image: '/assets/s/quiz/img/3/10.jpg',
+      image: '/assets/quiz/img/3/10.jpg',
       options: [
         'Nhà Lê sụp đổ',
         'Nhà Tây Sơn thất bại',
@@ -402,7 +402,7 @@ export const quizData = {
     {
       id: 1,
       question: 'Sự hình thành yếu tố tư bản chủ nghĩa ở Việt Nam bắt đầu rõ nét nhất từ thời kỳ nào?',
-      image: '/assets/s/quiz/img/4/1.png',
+      image: '/assets/quiz/img/4/1.png',
       options: [
         'Thế kỷ XVIII',
         'Giữa thế kỷ XIX',
@@ -415,7 +415,7 @@ export const quizData = {
     {
       id: 2,
       question: 'Mục tiêu chính của thực dân Pháp trong việc khai thác thuộc địa là:',
-      image: '/assets/s/quiz/img/4/2.jpg',
+      image: '/assets/quiz/img/4/2.jpg',
       options: [
         'Phát triển công nghiệp bản địa',
         'Cải thiện đời sống người dân Việt',
@@ -428,7 +428,7 @@ export const quizData = {
     {
       id: 3,
       question: 'Đặc điểm nổi bật của nền kinh tế Việt Nam thời Pháp thuộc là:',
-      image: '/assets/s/quiz/img/4/3.jpg',
+      image: '/assets/quiz/img/4/3.jpg',
       options: [
         'Kinh tế độc lập, tự chủ',
         'Kinh tế nửa phong kiến – nửa tư bản chủ nghĩa',
@@ -441,7 +441,7 @@ export const quizData = {
     {
       id: 4,
       question: 'Ngành nào được Pháp đầu tư mạnh nhất trong cuộc khai thác lần thứ nhất (1897–1914)?',
-      image: '/assets/s/quiz/img/4/4.jpg',
+      image: '/assets/quiz/img/4/4.jpg',
       options: [
         'Công nghiệp nặng',
         'Khai thác mỏ và nông nghiệp đồn điền',
@@ -454,7 +454,7 @@ export const quizData = {
     {
       id: 5,
       question: 'Chính sách nào của Pháp ảnh hưởng trực tiếp đến đời sống người dân?',
-      image: '/assets/s/quiz/img/4/5.jpg',
+      image: '/assets/quiz/img/4/5.jpg',
       options: [
         'Thuế, cưỡng bức lao dịch, và độc quyền kinh tế',
         'Tự do tôn giáo và bình đẳng chính trị',
@@ -467,7 +467,7 @@ export const quizData = {
     {
       id: 6,
       question: 'Tầng lớp nào mới xuất hiện và có vai trò tiến bộ trong hình thái tư bản?',
-      image: '/assets/s/quiz/img/4/6.png',
+      image: '/assets/quiz/img/4/6.png',
       options: [
         'Địa chủ phong kiến',
         'Công nhân, tư sản dân tộc',
@@ -480,7 +480,7 @@ export const quizData = {
     {
       id: 7,
       question: 'Hệ quả lớn nhất về xã hội của quá trình tư bản hóa dưới thời Pháp thuộc là:',
-      image: '/assets/s/quiz/img/4/7.png',
+      image: '/assets/quiz/img/4/7.png',
       options: [
         'Bình đẳng giai cấp',
         'Phân hóa xã hội sâu sắc',
@@ -493,7 +493,7 @@ export const quizData = {
     {
       id: 8,
       question: 'Giai cấp nào bị ảnh hưởng nặng nề nhất về đời sống kinh tế?',
-      image: '/assets/s/quiz/img/4/8.png',
+      image: '/assets/quiz/img/4/8.png',
       options: [
         'Địa chủ phong kiến',
         'Tư sản dân tộc',
@@ -506,7 +506,7 @@ export const quizData = {
     {
       id: 9,
       question: 'Tại sao Việt Nam không thể phát triển công nghiệp tư bản độc lập trong thời Pháp thuộc?',
-      image: '/assets/s/quiz/img/4/9.png',
+      image: '/assets/quiz/img/4/9.png',
       options: [
         'Thiếu lao động',
         'Thiếu nguyên liệu',
@@ -519,7 +519,7 @@ export const quizData = {
     {
       id: 10,
       question: 'Vì sao giai đoạn tư bản ở Việt Nam là tiền đề cho Cách mạng Tháng Tám 1945?',
-      image: '/assets/s/quiz/img/4/10.jpg',
+      image: '/assets/quiz/img/4/10.jpg',
       options: [
         'Vì kinh tế phát triển mạnh',
         'Vì tạo ra mâu thuẫn dân tộc – giai cấp sâu sắc',
@@ -535,7 +535,7 @@ export const quizData = {
     {
       id: 1,
       question: 'Lực lượng sản xuất trong hình thái XHCN có đặc điểm nổi bật là gì?',
-      image: '/assets/s/quiz/img/5/1.jpg',
+      image: '/assets/quiz/img/5/1.jpg',
       options: [
         'Dựa vào lao động thủ công.',
         'Gắn với công nghiệp hóa, hiện đại hóa.',
@@ -548,7 +548,7 @@ export const quizData = {
     {
       id: 2,
       question: 'Quan hệ sản xuất trong hình thái XHCN được xây dựng dựa trên cơ sở nào?',
-      image: '/assets/s/quiz/img/5/2.jpg',
+      image: '/assets/quiz/img/5/2.jpg',
       options: [
         'Sở hữu tư nhân tư bản.',
         'Sở hữu toàn dân và tập thể về tư liệu sản xuất.',
@@ -561,7 +561,7 @@ export const quizData = {
     {
       id: 3,
       question: 'Giai cấp giữ vai trò lãnh đạo trong hình thái XHCN là ai?',
-      image: '/assets/s/quiz/img/5/3.jpg',
+      image: '/assets/quiz/img/5/3.jpg',
       options: [
         'Giai cấp công nhân.',
         'Giai cấp tư sản.',
@@ -574,7 +574,7 @@ export const quizData = {
     {
       id: 4,
       question: 'Mục tiêu cơ bản nhất của hình thái XHCN là gì?',
-      image: '/assets/s/quiz/img/5/4.jpg',
+      image: '/assets/quiz/img/5/4.jpg',
       options: [
         'Tối đa hóa lợi nhuận.',
         'Tăng sức mạnh quân sự.',
@@ -587,7 +587,7 @@ export const quizData = {
     {
       id: 5,
       question: 'Vai trò của Nhà nước trong hình thái XHCN thể hiện như thế nào?',
-      image: '/assets/s/quiz/img/5/5.jpg',
+      image: '/assets/quiz/img/5/5.jpg',
       options: [
         'Bảo vệ lợi ích của thiểu số.',
         'Nhà nước của dân, do dân, vì dân.',
@@ -600,7 +600,7 @@ export const quizData = {
     {
       id: 6,
       question: 'Nền kinh tế trong thời kỳ quá độ lên CNXH ở Việt Nam được đặc trưng bởi gì?',
-      image: '/assets/s/quiz/img/5/6.jpg',
+      image: '/assets/quiz/img/5/6.jpg',
       options: [
         'Một thành phần kinh tế duy nhất.',
         'Nền kinh tế nhiều thành phần vận hành theo cơ chế thị trường có quản lý.',
@@ -613,7 +613,7 @@ export const quizData = {
     {
       id: 7,
       question: 'Nguyên tắc phân phối chủ yếu trong hình thái XHCN là gì?',
-      image: '/assets/s/quiz/img/5/7.webp',
+      image: '/assets/quiz/img/5/7.webp',
       options: [
         'Theo vốn góp.',
         'Theo nhu cầu.',
@@ -626,7 +626,7 @@ export const quizData = {
     {
       id: 8,
       question: 'Một biểu hiện cụ thể của sự quá độ lên CNXH ở Việt Nam là gì?',
-      image: '/assets/s/quiz/img/5/8.jpg',
+      image: '/assets/quiz/img/5/8.jpg',
       options: [
         'Cải cách ruộng đất.',
         'Cổ phần hóa, thu hút FDI nhưng vẫn giữ vai trò chủ đạo của Nhà nước.',
@@ -639,7 +639,7 @@ export const quizData = {
     {
       id: 9,
       question: 'Yếu tố nào bảo đảm tính định hướng xã hội chủ nghĩa ở Việt Nam?',
-      image: '/assets/s/quiz/img/5/9.jpg',
+      image: '/assets/quiz/img/5/9.jpg',
       options: [
         'Sự lãnh đạo của Đảng Cộng sản Việt Nam.',
         'Sự chi phối của các tập đoàn tư bản.',
@@ -652,7 +652,7 @@ export const quizData = {
     {
       id: 10,
       question: 'Kết quả cuối cùng khi xây dựng thành công hình thái XHCN là gì?',
-      image: '/assets/s/quiz/img/5/10.jpg',
+      image: '/assets/quiz/img/5/10.jpg',
       options: [
         'Xóa bỏ mọi giai cấp, thiết lập xã hội cộng sản chủ nghĩa.',
         'Tăng GDP bình quân đầu người.',
